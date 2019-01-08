@@ -17,6 +17,8 @@ public:
 int main()
 {
   KNeko x;
+
+  x.SetName("谷口");
   x.Naku();
 
   x.SetName("タマ");
