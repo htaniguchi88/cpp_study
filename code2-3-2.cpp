@@ -6,6 +6,7 @@ class KNeko
 {
   string name;
 public:
+  KNeko(){}
   KNeko(string n){
     name = n;
   }
@@ -25,4 +26,7 @@ int main()
   y.Naku();
   KNeko z("yuritani");
   z.Naku();
+  KNeko a;
+  a.SetName("ばねす");
+  a.Naku();
 }
