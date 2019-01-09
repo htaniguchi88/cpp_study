@@ -31,6 +31,10 @@ public:
 int main() //メイン関数名でオブジェクト(インスタンス)xを生成，xのメンバ関数を呼び出し
 {
   Rocket x;
-  x.Accel(30);
   x.Report();
+
+  for(int  i= 0; i < 3; i++) {
+    x.Accel(10);
+    x.Report();
+  }
 }
