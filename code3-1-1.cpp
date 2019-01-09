@@ -31,10 +31,18 @@ public:
 int main() //メイン関数名でオブジェクト(インスタンス)xを生成，xのメンバ関数を呼び出し
 {
   Rocket x;
+  cout << "さあ，いよいよロケットが完成しました。。" << endl;
+  cout << "操縦するのはあなたです。" << endl;
+  cout << "毎回，噴射量を決めてください。" << endl;
+  cout << "加速のチャンスは3回だけです。" << endl;
   x.Report();
 
-  for(int  i= 0; i < 3; i++) {
-    x.Accel(10);
+  int userInput;
+  int i;
+  for(i=0; i < 3; i++) {
+    cout << "噴射量を入力:";
+    cin >> userInput;
+    x.Accel(userInput);
     x.Report();
   }
 }
