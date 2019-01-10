@@ -5,8 +5,8 @@ class Rocket
 {
   int fuel, velocity, height;
 public:
-  Rocket():fuel(100), velocity(0), height(0){}
-  Rocket(int a, int b, int c): fuel(a), velocity(b), height(c){}
+  Rocket();
+  Rocket(int a, int b, int c);
   ~Rocket(){
     cout << "ありがとうございました" << endl;
   }
@@ -32,6 +32,9 @@ public:
     cout << endl;
   }
 };
+
+Rocket::Rocket():fuel(100), velocity(0), height(0){}
+Rocket::Rocket(int a, int b, int c):fuel(a), velocity(b), height(c){}
 
 int main()
 {
