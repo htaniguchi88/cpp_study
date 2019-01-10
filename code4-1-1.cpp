@@ -7,6 +7,9 @@ class Rocket
 public:
   Rocket():fuel(100), velocity(0), height(0){}
   Rocket(int a, int b, int c): fuel(a), velocity(b), height(c){}
+  ~Rocket(){
+    cout << "ありがとうございました" << endl;
+  }
 
   int GetF() const {return fuel;}
 
@@ -39,7 +42,7 @@ int main()
   cin >> b;
   x.Accel(b);
   x.Report();
-  while(x.GetF()>0){
+  while(x.GetF()>50){
     cout << "まだ燃料があります。" << endl;
     cout << "もう一度，噴射する燃料の量を入力してください:";
     cin >> b;
