@@ -39,7 +39,7 @@ int main()
   cin >> b;
   x.Accel(b);
   x.Report();
-  if(x.GetF()>0){
+  while(x.GetF()>0){
     cout << "まだ燃料があります。" << endl;
     cout << "もう一度，噴射する燃料の量を入力してください:";
     cin >> b;
