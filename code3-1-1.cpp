@@ -7,7 +7,7 @@ class Rocket{ //クラスを宣言
   int height;
 
 public:
-  Rocket(){ //コンストラクタを宣言
+  Rocket(){ //コンストラクタを定義
     fuel = 100; //メンバ変数に整数値を代入
     velocity = 0;
     height = 0;
@@ -19,13 +19,13 @@ public:
     height = c;
   }
 
-  void Accel(int userInput){ //引数にuserInputをとるメンバ関数を宣言
+  void Accel(int userInput){ //引数にuserInputをとるメンバ関数を定義
     fuel -= userInput;
     velocity += userInput;
     height += velocity;
   }
 
-  void Report() const{ //引数をとらないメンバ関数を宣言
+  void Report() const{ //引数をとらないメンバ関数を定義
     cout << "状況報告" << endl;
     cout << "燃料:" << fuel << endl;
     cout << "速度:" << velocity << endl;
