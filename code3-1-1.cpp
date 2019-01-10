@@ -13,6 +13,12 @@ public:
     height = 0;
   }
 
+  Rocket(int a, int b , int c){
+    fuel = a;
+    velocity = b;
+    height = c;
+  }
+
   void Accel(int userInput){ //引数にuserInputをとるメンバ関数を宣言
     fuel -= userInput;
     velocity += userInput;
@@ -31,18 +37,9 @@ public:
 int main() //メイン関数名でオブジェクト(インスタンス)xを生成，xのメンバ関数を呼び出し
 {
   Rocket x;
-  cout << "さあ，いよいよロケットが完成しました。。" << endl;
-  cout << "操縦するのはあなたです。" << endl;
-  cout << "毎回，噴射量を決めてください。" << endl;
-  cout << "加速のチャンスは3回だけです。" << endl;
-  x.Report();
+  Rocket y(200, 10, 5);
 
-  int userInput;
-  int i;
-  for(i=0; i < 3; i++) {
-    cout << "噴射量を入力:";
-    cin >> userInput;
-    x.Accel(userInput);
-    x.Report();
-  }
+  x.Report();
+  y.Report();
+
 }
