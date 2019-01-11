@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-  srand((usigned)time(NULL));
+  srand((unsigned int)time(NULL));
   cout << rand() << endl;
   cout << rand() << endl;
   cout << rand() << endl;
