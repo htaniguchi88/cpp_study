@@ -39,24 +39,36 @@ int Hero::Attack(){
   return a;
 }
 
-int main()
+class Game
 {
-  srand((unsigned)time(NULL));
-  Mao m;  //インスタンス生成
+  Mao m;
   Hero h;
-  cout << "これから魔王と戦います。がんばれ！" << endl;
-  cout << "魔王の残りエネルギー:" << m.GetEnergy() << endl;
+public:
+  Game();
+  void Play();
+};
 
-  while(h.GetEnergy() > 0){
+Game::Game(){
+  cout << "これから魔王と戦います。頑張れ！" <<endl;
+  cout << "魔王の残りエネルギー:" << m.GetEnergy() <<endl;
+}
+
+void Game::Play(){
+  while(h.GetEnergy() > 0) {
     if(m.GetEnergy() <= 0){
       break;
     }
-    // int x;
-    // x = h.Attack();
-    // m.Attacked(x);
     m.Attacked(h.Attack());
   }
-  if(m.GetEnergy()>0){
+  if(m.GetEnergy() > 0){
     cout << "だめだ。魔王は逃げてしまった。" << endl;
   }
+}
+
+
+int main()
+{
+  srand((unsigned)time(NULL));
+  Game g;
+  g.Play();
 }
