@@ -2,14 +2,15 @@
 using namespace std;
 
 struct Enemy {
-
+    char name[20];
     int hp;
     int attack;
 
 };
 
 void ShowEnemy(Enemy enemy){
-
+    
+    cout << "敵の名前は" << enemy.name << endl;
     cout << "HPは" << enemy.hp << endl;
     cout << "攻撃力は" << enemy.attack << endl;
 
@@ -17,7 +18,7 @@ void ShowEnemy(Enemy enemy){
 
 int main() {
 
-    Enemy Kirby = {30, 40};
+    Enemy Kirby = {"カービー", 30, 40};
     ShowEnemy(Kirby);
 
 }
