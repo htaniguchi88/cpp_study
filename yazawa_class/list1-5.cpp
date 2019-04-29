@@ -8,8 +8,8 @@ struct Employee {
 	int salary;
 };
 
-struct Company {
-	struct Employee person[3];
+struct Company { //構造体の配列をメンバにもつ構造体
+	struct Employee person[3]; //構造体の配列
 	char companyName[80];
 };
 
