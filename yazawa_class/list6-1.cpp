@@ -26,7 +26,7 @@ void NewClass::func2(const char *s) {
 }
 
 int main() {
-	NewClass obj;
+	MyClass obj;
 
 	obj.func1(123);
 
