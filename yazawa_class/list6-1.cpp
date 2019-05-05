@@ -22,7 +22,7 @@ public:
 
 void NewClass::func2(const char *s) {
 	cout << "文字列データ:";
-	cout << s << endl;
+	MyClass::func2(s);
 }
 
 int main() {
