@@ -4,13 +4,13 @@
 using namespace std;
 
 void Employee::showData() {
-	cout << number << endl;
-	cout << name << endl;
-	cout << salary << endl;
+	cout << "社員番号: " << number << endl;
+	cout << "氏名: " << name << endl;
+	cout << "給与: " << salary << endl;
+	cout << "一言コメント: " << comment << endl;
 };
 
 void Engineer::showAllData() {
 	Employee::showData();
-	cout << language << endl;
-	cout << "I am a engineer" << endl;
+	cout << "プログラミング言語: " << language << endl;
 }

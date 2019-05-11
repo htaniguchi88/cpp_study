@@ -4,17 +4,18 @@
 using namespace std;
 
 int main() {
-	char language[16][80] =  {"C", "C++", "C#", "Go", "Python", "JavaScript"};
-
+	Employee hoge;
 	Engineer taniguchi;
+
+	hoge.number = 100;
 
 	taniguchi.number = 138;
 	strcpy(taniguchi.name, "谷口");
 	taniguchi.salary = 500;
+	strcpy(taniguchi.language, "C++");
+	strcpy(taniguchi.comment, "I am a engineer!");
 
-	for (int i=0; i<=5; i++) {
-		strcpy(taniguchi.language[i], language[i]);
-	}
+	hoge.showData();
 
 	taniguchi.showAllData();
 

@@ -5,6 +5,7 @@ public:
 	int number;
 	char name[80];
 	int salary;
+	char comment[80];
 protected:
 	void showData();
 };
@@ -12,7 +13,7 @@ protected:
 //継承
 class Engineer : public Employee {
 public:
-	char language[20][50];
+	char language[80];
 	void showAllData();
 };
 
