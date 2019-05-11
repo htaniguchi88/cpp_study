@@ -13,4 +13,13 @@ void Employee::showData() {
 void Engineer::showAllData() {
 	Employee::showData();
 	cout << "プログラミング言語: " << language << endl;
+	cout << "*************************" << endl;
+}
+
+void Engineer::showAllData(int sabbatical, int bonus) {
+	Employee::showData();
+
+	int additional_commit = sabbatical * bonus;
+	cout << "サバティカルとボーナスを与えることによる追加的なコミット:" << additional_commit << endl;
+	cout << "*************************" << endl;
 }

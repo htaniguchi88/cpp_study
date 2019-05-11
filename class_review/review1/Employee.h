@@ -15,5 +15,6 @@ class Engineer : public Employee {
 public:
 	char language[80];
 	void showAllData();
+	void showAllData(int sabbatical, int bonus);
 };
 

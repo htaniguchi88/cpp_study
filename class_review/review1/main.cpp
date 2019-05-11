@@ -4,10 +4,7 @@
 using namespace std;
 
 int main() {
-	Employee hoge;
 	Engineer taniguchi;
-
-	hoge.number = 100;
 
 	taniguchi.number = 138;
 	strcpy(taniguchi.name, "谷口");
@@ -15,9 +12,8 @@ int main() {
 	strcpy(taniguchi.language, "C++");
 	strcpy(taniguchi.comment, "I am a engineer!");
 
-	hoge.showData();
-
 	taniguchi.showAllData();
+	taniguchi.showAllData(4, 100);
 
 	return 0;
 
