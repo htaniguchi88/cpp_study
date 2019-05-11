@@ -6,7 +6,7 @@ public:
 	char name[80];
 	int salary;
 	char comment[80];
-	virtual void showHeader();
+	virtual void showHeader()=0;
 protected:
 	void showData();
 };
