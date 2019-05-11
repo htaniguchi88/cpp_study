@@ -6,6 +6,7 @@ public:
 	char name[80];
 	int salary;
 	char comment[80];
+	virtual void showHeader();
 protected:
 	void showData();
 };
@@ -16,5 +17,6 @@ public:
 	char language[80];
 	void showAllData();
 	void showAllData(int sabbatical, int bonus);
+	void showHeader();
 };
 

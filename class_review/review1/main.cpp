@@ -4,7 +4,12 @@
 using namespace std;
 
 int main() {
+	Employee shinsotsu;
 	Engineer taniguchi;
+
+	shinsotsu.number = 150;
+	strcpy(shinsotsu.name, "新卒太郎");
+	shinsotsu.salary = 400;
 
 	taniguchi.number = 138;
 	strcpy(taniguchi.name, "谷口");
@@ -12,6 +17,9 @@ int main() {
 	strcpy(taniguchi.language, "C++");
 	strcpy(taniguchi.comment, "I am a engineer!");
 
+	shinsotsu.showHeader();
+
+	taniguchi.showHeader();
 	taniguchi.showAllData();
 	taniguchi.showAllData(4, 100);
 

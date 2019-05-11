@@ -10,10 +10,14 @@ void Employee::showData() {
 	cout << "一言コメント: " << comment << endl;
 };
 
+void Employee::showHeader() {
+	cout << "-社員情報-" << endl;
+}
+
 void Engineer::showAllData() {
 	Employee::showData();
 	cout << "プログラミング言語: " << language << endl;
-	cout << "*************************" << endl;
+	cout << "***************************************" << endl;
 }
 
 void Engineer::showAllData(int sabbatical, int bonus) {
@@ -21,5 +25,10 @@ void Engineer::showAllData(int sabbatical, int bonus) {
 
 	int additional_commit = sabbatical * bonus;
 	cout << "サバティカルとボーナスを与えることによる追加的なコミット:" << additional_commit << endl;
-	cout << "*************************" << endl;
+	cout << "***************************************" << endl;
+}
+
+void Engineer::showHeader() {
+	cout << "-社員情報-" << endl;
+	cout << "エンジニア" << endl;
 }
