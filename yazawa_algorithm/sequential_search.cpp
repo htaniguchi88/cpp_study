@@ -3,16 +3,15 @@ using namespace std;
 
 int main() {
 	vector<int> data{2, 68, 92, 88, 41, 53, 97, 84, 39, 55};
-	int x, pos;
 	size_t i;
+	int pos=-1;
 
-	pos = -1;
-	x = 55;
+	data.push_back(97);
 
-	for (i=0; i<data.size() && pos == -1; i++) {
-		if (data[i] == x) {
+	for (i=0; i<data.size(); i++) {
+		if (data[i] == data[10]) {
 			pos = i;
-			cout << pos << endl;
+			break;
 		}
 	};
 
