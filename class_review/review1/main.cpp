@@ -17,7 +17,7 @@ int main() {
 	strcpy(taniguchi.language, "C++");
 	strcpy(taniguchi.comment, "I am a engineer!");
 
-	shinsotsu.showHeader();
+
 
 	taniguchi.showHeader();
 	taniguchi.showAllData();
