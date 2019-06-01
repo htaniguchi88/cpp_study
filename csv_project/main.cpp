@@ -29,9 +29,13 @@ int main(){
 		string token;
 		// getlineで文字が流し込まれたstrをistringstreamのオブジェクトであるissのメンバに渡すことで，もう一度ストリームに戻している。istringstreamの中では引数を受け取る変数初期化のコンストラクタがあるのだろう。
 		istringstream iss(str);
-		string token;
 
-		getline(iss, member.group_id, ',');
+		getline(iss, token, ',');
+		member.group_id = (int32_t)stoi(token);
+
+		cout << member.group_id << endl;
+
+		exit(0);
 
 	}
 
